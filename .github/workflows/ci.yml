@@ -97,4 +97,5 @@ jobs:
           app-name: 'nestjs-function-app'
           slot-name: 'Production'
           package: '/functions/hello-world' 
+          
 
