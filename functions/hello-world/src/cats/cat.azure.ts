@@ -1,9 +1,9 @@
 import { INestApplication } from '@nestjs/common';
 import { NestFactory } from '@nestjs/core';
-import { AppModule } from './app.module';
+import { CatModule } from './cat.module';
 
 export async function createApp(): Promise<INestApplication> {
-  const app = await NestFactory.create(AppModule);
+  const app = await NestFactory.create(CatModule);
   app.setGlobalPrefix('api');
   
   await app.init();
