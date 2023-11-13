@@ -1,7 +1,7 @@
 // global-error-filter.ts
 import { ExceptionFilter, Catch, ArgumentsHost, HttpException, HttpStatus } from '@nestjs/common';
 import { Request, Response } from 'express';
-import { AppService } from './app.service';
+import { DogService } from './dog.service';
 
 @Catch()
 export class GlobalErrorFilter implements ExceptionFilter {
@@ -22,7 +22,7 @@ export class GlobalErrorFilter implements ExceptionFilter {
       statusCode: status,
       timestamp: new Date().toISOString(),
       path: request.url,
-      more: new AppService().getHello(),
+      more: new DogService().getHello(),
       message,
     });
   }
