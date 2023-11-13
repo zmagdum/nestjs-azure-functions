@@ -13,5 +13,5 @@
       "name": "res"
     }
   ],
-  "scriptFile": "../dist/func-cats/index.js"
+  "scriptFile": "index.js"
 }
